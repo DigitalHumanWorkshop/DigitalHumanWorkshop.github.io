@@ -5,7 +5,7 @@
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Digital Human Workshop at NeurIPS 2023</title>
+  <title>Home | Digital Human Workshop at AAAI 2024</title>
   
   <!-- PLUGINS CSS STYLE -->
   <link href="./res/jquery-ui.min.css" rel="stylesheet">
@@ -45,19 +45,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <nav class="navbar navbar-expand-lg  navigation"> <a class="navbar-brand" href="https://nips.cc/Conferences/2023/Board"> <img src="./asset/NIPS23.jpg" alt="" width="85px"> </a>
+              <nav class="navbar navbar-expand-lg  navigation"> <a class="navbar-brand" href="https://aaai.org/aaai-conference/"> <img src="./asset/AAAI.jpeg" alt="" width="85px"> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto main-nav">
                     <li class="nav-item active"> <a class="nav-link" href="#overview">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link " href="#call">Calls</a> </li>
-                    <li class="nav-item"> <a class="nav-link " href="#speakers">Speakers</a> </li>
+                    <li class="nav-item"> <a class="nav-link " href="#dates">Schedule</a></li>
                     <li class="nav-item"> <a class="nav-link " href="#challenge">Challenge</a> </li>
                     <li class="nav-item"> <a class="nav-link " href="#organizers">Organizer</a> </li>
-                    <li class="nav-item"> <a class="nav-link " href="#paper">Papers</a> </li>
-                    <li class="nav-item"> <a class="nav-link " href="#sponsors">Sponsors</a> </li>
-                    <li class="nav-item"> <a class="nav-link " href="#committee">Committee</a> </li>
-                    <li class="nav-item"> <a class="nav-link " href="#previous">Previous</a> </li>
                   </ul>
                   
                 </div>
@@ -79,33 +75,32 @@
         <div class="col-md-12"> 
           <!-- Section title -->
           <div class="section-title">
-            <h1>1st International Workshop on <br>High-fidelity Digital Human
-              Reconstruction and Animation</h1>
+            <h1>1st International Workshop on <br>AI for Digital Human Modeling</h1>
       <br>
-      <h4>Workshop at Neural Information Processing Systems 2023</h4>
+      <h4>Workshop at AAAI Conference on Artificial Intelligence 2024</h4>
       <br><br>
             <h2 id="overivew">Overview</h2>
           </div>
-          Digital humans are important research topics with many applications, such as
-          gaming, virtual reality, and the metaverse. In the traditional pipeline, manual labor
-          is heavily involved in digital human creation and animation. To facilitate research
-          in this direction, we plan to promote the use of machine learning methods for digital
-          humans in this competition, in pursuit of automatic and high-fidelity reconstruction
-          and animation. We focus on three challenging machine learning problems for digital
-          human, i.e., self-supervised learning, semi-supervised learning, and multi-modal
-          learning. Self-supervised learning and semi-supervised learning are important for
-          digital human reconstruction, where ground-truth data is expensive and scarce
-          for large-scale supervised training. Multi-modal learning is indispensable for
-          constructing a vivid digital human, e.g., driving a digital human with audio. We
-          design four tracks for participants to get easily involved, and provide the baseline
-          models for these sub-tasks and expect the participants to develop novel solutions.
-          This competition is also naturally related to computer vision, which is closely
-          related to the NeurIPS community. Under the topic of digital human, the latest
-          developments in machine learning and computer vision can be put together.
-    <!-- <br><br>
-    <strong><font color="#FF0000">Important:</font> The submission deadline has been extended to 15th Nov 2022 (AoE).</strong>
-    (<a href="https://cmt3.research.microsoft.com/PracticalDL2023/" style="color:blue;">Submission Site</a>)
-    <br> -->
+            It is a natural desire for human beings to investigate the dig-
+          ital world, e.g., the metaverse. Digital human avatars, as the
+          most common representation of human beings in the digi-
+          tal space, are a fundamental element of the metaverse. Ac-
+          cordingly, there is a growing interest in developing AI tools
+          to facilitate the process and improve the quality of digital
+          human creation. This workshop aims to bring together re-
+          searchers interested in the latest advancements in the field
+          of digital human modeling and how artificial intelligence can
+          be leveraged to improve the quality and efficiency of the pro-
+          cess. To create high-fidelity digital humans, traditional mod-
+          els primarily follow the computer graphics pipeline. This
+          process includes model creation, texture mapping, motion
+          capture, bone binding, and other intricate procedures that re-
+          quire heavy manual labor. As a result, it is infeasible to scale
+          this process to large-scale digital human generation and this
+          limits the applications of digital humans. Recent advances in
+          artificial intelligence motivate us to propose this workshop,
+          to further pursue a more automatic pipeline of modeling dig-
+          ital humans.
       </div>
       </div>
     </div>
@@ -123,24 +118,29 @@
           <div class="section-title">
             <h2 id="call">Call for Papers</h2>
           </div>
-<!-- 
-          Recently, the success of deep learning in AI has attracted great attention from academia and industry. However, research shows that the performance of models in the wild is far from practical due to the lack of efficiency and robustness towards open-world data and scenarios. We welcome research contributions related to the following (but not limited to) topics:<br>
+
+            This workshop will primarily focus on three main components in digital human modeling, i.e. representation, rendering, and learning.
+           We encourage the submissions to address the opening questions such as: <br>
     <ul style="margin-left: 40px">
-    <li>Network quantization and binarization</li>
-    <li>Adversarial attacking deep learning systems</li>
-    <li>Neural architecture search (NAS)</li>
-    <li>Robust architectures against adversarial attacks</li>
-    <li>Hardware implementation and on-device deployment</li>
-    <li>Benchmark for evaluating model robustness</li>
-    <li>New methodologies and architectures for efficient and rubost deep learning</li>
+    <li>Whether explicit(mesh,point cloud, etc.) or implicit(SDF, NeRF, etc.) representations are more suitable for modeling digital humans</li>
+    <li>What's the limitation of each representation and can we build a hybrid model?</li>
+    <li>The traditional rendering pipeline has been well supported by industrial rendering engines, can AI tools such as neural rendering be integrated into the industry?</li>
+    <li>There have been some pioneering works to apply 3D-aware GAN and diffusion models to generate digital humans, how to design new learning strategies that are more effective, efficient, and resource-friendly?</li>
     </ul>
-    <strong>Submission Format</strong>: Submissions papers (.pdf format) must use the AAAI Article Template and be anonymized and follow AAAI 2023 author instructions. The workshop considers two types of submissions: (1) Long Paper: Papers are limited to 7 pages excluding references; (2) Extended Abstract: Papers are limited to 4 pages including references.
-        <br>
-        The excellent papers will be invited to the <a href="https://www.journals.elsevier.com/pattern-recognition/call-for-papers/practical-deep-learning-in-the-wild" style="color:blue;">Special Issue</a>  of Pattern Recognition journal for publication consideration.
-        <br>
+      This workshop will also accept submissions for the downstream tasks of digital humans, including but not limited to generation, reconstruction, and animation.
+    It is encouraged to submit the AI-empowered approaches to significantly reduce manual labor for digital human modeling, such as:
+    <ul style="margin-left: 40px">
+      <li>Large-scale learning for face/body generation</li>
+      <li>Semi-supervised/unsupervised learning for parameterized digital human modeling</li>
+      <li>Neural networks employed for generating digital humans with detailed geometry and textures</li>
+      <li>Animating digital humans to precise expression, including talking head and motion control</li>
+    </ul>
+      Finally, this workshop will welcome submissions to discuss the impact of AI-generated characters on social good. 
+    For example, the potential risk of creating fake media, invading people's privacy, replacing human workers in certain industries, etc.<br><br>
+        <strong>Submission Format</strong>: Submissions papers (.pdf format) must use the AAAI Article Template and be anonymized and follow AAAI 2024 author instructions. The workshop considers two types of submissions: (1) Long Paper: Papers are limited to 7 pages excluding references; (2) Extended Abstract: Papers are limited to 4 pages including references.<br>
         <strong>Submission Site</strong>: <a href="https://cmt3.research.microsoft.com/PracticalDL2023/" style="color:blue;">https://cmt3.research.microsoft.com/PracticalDL2023/</a> 
         <br>
-        <strong>Submission Due</strong>: 15th Nov, 2022 (AoE)  -->
+        <strong>Submission Due</strong>: 15th Nov, 2022 (AoE) 
 
         </div>
       </div>
@@ -167,198 +167,6 @@
     </div>
   </section>
 
-
-<!--==========================================
-=            Speakers Section            =
-===========================================-->
-<section class="popular-deals section bg-gray"> 
-  <!-- Container Start -->
-  <div class="container">
-    <div class="row">
-      <div class="col-12"> 
-        <!-- Section title -->
-        <div class="section-title">
-          <h2 id="speakers">Keynote Speakers</h2>
-        </div>
-        <!-- <div class="card-deck"> 
-
-
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/adam.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://generativevision.mpi-inf.mpg.de/">Adam Kortylewski</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p><br>Max-Planck-Institut für Informatik<br><br></p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/priyadarshini.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://seas.yale.edu/faculty-research/faculty-directory/priya-panda">Priyadarshini Panda</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p><br>Yale University<br><br><br></p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/florian.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://floriantramer.com/">Florian Tramer</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p><br>ETH Zürich<br><br><br><br></p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
- 
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/neil.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://people.duke.edu/~zg70/">Neil Gong</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p><br>Duke University<br><br><br><br></p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/markus.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://www.apax.com/people/our-team/markus-nagel/">Markus Nagel</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p><br>Qualcomm AI Research<br><br><br><br></p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-                              
-  </div>
-  <br>
-  
-        <div class="card-deck"> 
-
-
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/jie.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://sites.google.com/view/jie-zhang/home">Jie M. Zhang</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>King's College London</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/vsehwag.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://vsehwag.github.io/">Vikash Sehwag</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>Princeton University</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/shouling.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://scholar.google.com/citations?user=5HoF_9oAAAAJ">Shouling Ji</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>Zhejiang University</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="card">
-
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/bichen.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://scholar.google.com/citations?user=K3QJPdMAAAAJ&hl=en">Bichen Wu</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>Meta</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-                              
-  </div> -->
-  
-      </div>
-    </div>
-  </div>
-  <!-- Container End --> 
-  
-  </section>
-
-
-  
 
     <!--==========================================
   =            Challenge Section            =
@@ -448,94 +256,83 @@
         <div class="section-title">
           <h2 id="organizers">Organizer</h2>
         </div>
-        <!-- <div class="card-deck"> 
+
+        <div class="card-deck"> 
 
           <div class="card">
             <div class="category-block">
               <table width="80%" border="0" align="center">
                 <tbody align="center">
                   <tr height="200px">
-                    <td><img src="./res/haotong.png" alt="" class="rounded-circle" width="60%"></td>
+                    <td><img src="./asset/yanyichao.jpeg" alt="" class="rounded-circle" width="60%"></td>
                   </tr>
                   <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://htqin.github.io/">Haotong Qin</a></h5></td>
+                    <td><h5 class="text-center"><a href="https://daodaofr.github.io/">Yichao Yan</a></h5></td>
                   </tr>
                   <tr height="60px">
-                    <td><p><br>Beihang University<br><br><br><br></p></td>
+                    <td><p><br>Shanghai Jiaotong University<br><br><br><br></p></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+
           <div class="card">
             <div class="category-block">
               <table width="80%" border="0" align="center">
                 <tbody align="center">
                   <tr height="200px">
-                    <td><img src="./res/ruihao.jpg" alt="" class="rounded-circle" width="60%"></td>
+                    <td><img src="./asset/matthias.jpeg" alt="" class="rounded-circle" width="60%"></td>
                   </tr>
                   <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://xhplus.github.io/">Ruihao Gong</a></h5></td>
+                    <td><h5 class="text-center"><a href="https://niessnerlab.org/">Matthias Nießner</a></h5></td>
                   </tr>
                   <tr height="60px">
-                    <td><p><br>SenseTime Research<br><br><br><br></p></td>
+                    <td><p><br>Technical University of Munich
+                      <br><br><br><br></p></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+
           <div class="card">
             <div class="category-block">
               <table width="80%" border="0" align="center">
                 <tbody align="center">
                   <tr height="200px">
-                    <td><img src="./res/jiakai.png" alt="" class="rounded-circle" width="60%"></td>
+                    <td><img src="./asset/dengjiankang.png" alt="" class="rounded-circle" width="60%"></td>
                   </tr>
                   <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://jiakaiwangcn.github.io/">Jiakai Wang</a></h5></td>
+                    <td><h5 class="text-center"><a href="https://jiankangdeng.github.io/">Jiankang Deng</a></h5></td>
                   </tr>
                   <tr height="60px">
-                    <td><p><br>Zhongguancun Laboratory<br><br><br></p></td>
+                    <td><p><br>Noah's Ark Lab<br><br><br></p></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+
           <div class="card">
             <div class="category-block">
               <table width="80%" border="0" align="center">
                 <tbody align="center">
                   <tr height="200px">
-                    <td><img src="./res/siyuan.png" alt="" class="rounded-circle" width="60%"></td>
+                    <td><img src="./asset/fengyao.jpeg" alt="" class="rounded-circle" width="60%"></td>
                   </tr>
                   <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://scholar.google.com/citations?user=Hon4nf0AAAAJ">Siyuan Liang</a></h5></td>
+                    <td><h5 class="text-center"><a href="https://is.mpg.de/~yfeng">Yao Feng</a></h5></td>
                   </tr>
                   <tr height="60px">
-                    <td><p><br>Chinese Academy of Sciences<br><br><br></p></td>
+                    <td><p><br>MPI for Intelligent Systems and ETH Zurich<br><br><br></p></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/zeyu.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://zysszy.github.io/">Zeyu Sun</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p><br>Zhongguancun Laboratory<br><br><br></p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-                              
+          
+                            
   </div>
   <br>
   
@@ -546,90 +343,74 @@
               <table width="80%" border="0" align="center">
                 <tbody align="center">
                   <tr height="200px">
-                    <td><img src="./res/aishan.png" alt="" class="rounded-circle" width="60%"></td>
+                    <td><img src="./asset/szafeiriou.jpg" alt="" class="rounded-circle" width="60%"></td>
                   </tr>
                   <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://liuaishan.github.io/">Aishan Liu</a></h5></td>
+                    <td><h5 class="text-center"><a href="https://wp.doc.ic.ac.uk/szafeiri/">Stefanos Zafeiriou</a></h5></td>
                   </tr>
                   <tr height="60px">
-                    <td><p>Beihang University<br><br><br><br></p></td>
+                    <td><p>Imperial College London<br><br><br><br></p></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+                   
           <div class="card">
             <div class="category-block">
               <table width="80%" border="0" align="center">
                 <tbody align="center">
                   <tr height="200px">
-                    <td><img src="./res/wenbo.png" alt="" class="rounded-circle" width="60%"></td>
+                    <td><img src="./asset/daizonghong.jpg" alt="" class="rounded-circle" width="60%"></td>
                   </tr>
                   <tr height="30px">
-                    <td><h5 class="text-center"><a href="http://staff.ustc.edu.cn/~welbeckz/">Wenbo Zhou</a></h5></td>
+                    <td><h5 class="text-center"><a href="https://ieeexplore.ieee.org/author/37088356489">Zonghong Dai</a></h5></td>
                   </tr>
                   <tr height="60px">
-                    <td><p>University of Science and Technology of China<br><br></p></td>
+                    <td><p><br>Huawei Cloud<br><br><br></p></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/shanghang.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://www.shanghangzhang.com/">Shanghang Zhang</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>Peking University</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="./res/fisher.png" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://www.yf.io/">Fisher Yu</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>ETH Zürich<br><br><br><br></p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="card">
 
+          <div class="card">
             <div class="category-block">
               <table width="80%" border="0" align="center">
                 <tbody align="center">
                   <tr height="200px">
-                    <td><img src="./res/xianglong.png" alt="" class="rounded-circle" width="60%"></td>
+                    <td><img src="./asset/xudi.gif" alt="" class="rounded-circle" width="60%"></td>
                   </tr>
                   <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://xlliu-beihang.github.io/">Xianglong Liu</a></h5></td>
+                    <td><h5 class="text-center"><a href="https://ieeexplore.ieee.org/author/37086190386">Di Xu</a></h5></td>
                   </tr>
                   <tr height="60px">
-                    <td><p>Beihang University<br><br><br><br></p></td>
+                    <td><p><br>Huawei Cloud<br><br><br></p></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-                              
+
+          <div class="card">
+            <div class="category-block">
+              <table width="80%" border="0" align="center">
+                <tbody align="center">
+                  <tr height="200px">
+                    <td><img src="" alt="" class="rounded-circle" width="60%"></td>
+                  </tr>
+                  <tr height="30px">
+                    <td><h5 class="text-center"><a href=""></a></h5></td>
+                  </tr>
+                  <tr height="60px">
+                    <td><p><br><br><br><br></p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
   </div>
-   -->
+
       </div>
     </div>
   </div>
@@ -661,223 +442,6 @@
     <!-- br>
     <br> -->
     
-    <section class="section"> 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-          <div class="section-title">
-            <h2 id="paper">Accepted Papers</h2>
-          </div>
-
-    <div class="container">
-    <h2>Accepted Long Paper</h2>
-    <div class="overview">
-    <!-- <ul>
-      <li><strong>Automatic Neural Network Pruning that Efficiently Preserves the Model Accuracy</strong> [<a href="https://practical-dl.github.io/2023/long_paper/1/CameraReady/1.pdf" target="">Paper</a>] [<a href="https://practical-dl.github.io/2023/long_paper/1/CameraReady/1_supplementary.zip" target="">Supp</a>] <br>
-      Thibault Castells (Nota AI GmbH); Seul-Ki Yeom (Nota AI GmbH)*</li>
-
-      <li><strong>HesScale: Scalable Computation of Hessian Diagonals</strong> [<a href="https://practical-dl.github.io/2023/long_paper/2/CameraReady/2.pdf" target="">Paper</a>]  <br>
-      Mohamed Elsayed (University of Alberta)*; Rupam Mahmood (University of Alberta)</li>
-      
-      <li><strong>Contrastive View Design Strategies to Enhance Robustness to Domain Shifts in Downstream Object Detection</strong> [<a href="https://practical-dl.github.io/2023/long_paper/3/CameraReady/3.pdf" target="">Paper</a>] <br>
-      Kyle R Buettner (University of Pittsburgh)*; Adriana Kovashka (University of Pittsburgh)</li>
-      
-      <li><strong>Model and Data Agreement for Learning with Noisy Labels</strong> [<a href="https://practical-dl.github.io/2023/long_paper/6/CameraReady/6.pdf" target="">Paper</a>] <br>
-      Yuhang Zhang (Inspur Electronic Information Industry Co., Ltd.)*; Weihong Deng (Inspur); Xingchen Cui (Inspur Electronic Information Industry Co., Ltd.); Yunfeng Yin (Inspur); Hongzhi Shi (Inspur Electronic Information Industry Co., Ltd); Dongchao Wen (Inspur Electronic Information Industry Co., Ltd.)</li>
-
-      <li><strong>Expeditious Saliency-guided Mix-up through Random Gradient Thresholding</strong>  [<a href="https://practical-dl.github.io/2023/long_paper/7/CameraReady/7.pdf" target="">Paper</a>] [<a href="https://practical-dl.github.io/2023/long_paper/7/CameraReady/7-supp.zip" target="">Supp</a>] <br>
-      Long Minh Luu (International University - VNUHCM)*; Zeyi Huang (Carnegie Mellon University); Haohan Wang (University of Illinois Urbana-Champaign); Yong Jae Lee (University of Wisconsin-Madison); Eric Xing (MBZUAI, CMU, and Petuum Inc.)</li>
-
-      <li><strong>Generalizability of Adversarial Robustness Under Distribution Shifts</strong> [<a href="https://practical-dl.github.io/2023/long_paper/9/CameraReady/9.pdf" target="">Paper</a>] [<a href="https://practical-dl.github.io/2023/long_paper/9/CameraReady/9-supp.zip" target="">Supp</a>]  <br>
-      Kumail Alhamoud (KAUST)*; Hasan Abed Al Kader Hammoud (King Abdullah University of Science and Technology ); Motasem Alfarra (KAUST); Bernard Ghanem (KAUST)</li>
-      
-      <li><strong>Explanation-based Adversarial Detection with Noise Reduction</strong>  [<a href="https://practical-dl.github.io/2023/long_paper/14/CameraReady/14.pdf" target="">Paper</a>]  <br>
-      Juntao Su (The George Washington University)*; Zhou Yang (The George Washington University); Zexin Ren (George Washingtong University); Fang Jin (George Washington University)</li>
-
-      <li><strong>Efficient Fusion of Image Attributes: A New Approach to Visual Recognition</strong> [<a href="https://practical-dl.github.io/2023/long_paper/16/CameraReady/16.pdf" target="">Paper</a>]  <br>
-      Dehao Yuan (University of Maryland)*; Minghui Liu (University of Maryland); Cornelia Fermuller (University of Maryland, College Park); Yiannis Aloimonos (University of Maryland, College Park)</li>
-
-      <li><strong>Systematic Quantization of Vision Models based on MLPs</strong>  [<a href="https://practical-dl.github.io/2023/long_paper/17/CameraReady/17.pdf" target="">Paper</a>]  [<a href="https://practical-dl.github.io/2023/long_paper/17/CameraReady/17-supp.zip" target="">Supp</a>] <br>
-      Lingran Zhao (Peking University)*; Zhen Dong (UC Berkeley); Kurt Keutzer (EECS, UC Berkeley)</li>
-
-      <li><strong>"It’s a Match!" - A Benchmark of Task Affinity Scores for Joint Learning</strong>  [<a href="https://practical-dl.github.io/2023/long_paper/18/CameraReady/18.pdf" target="">Paper</a>]  [<a href="https://practical-dl.github.io/2023/long_paper/18/CameraReady/18-supp.zip" target="">Supp</a>]  <br>
-      Raphael AZORIN (Huawei Technologies)*; Massimo Gallo (Huawei Technologies Co., Ltd.); alessandro finamore (huawei technologies); dario rossi (Huawei); Pietro Michiardi (EURECOM)</li>
-
-      <li><strong>Simplifying Adversarial Attacks Against Object Detectors: a Fundamental Approach</strong> [<a href="https://practical-dl.github.io/2023/long_paper/21/CameraReady/21.pdf" target="">Paper</a>]  <br>
-      Thomas Cilloni (University of Mississippi)*; Charles Fleming (Cisco Research); Charles Walter (University of Mississippi)</li>
-
-      <li><strong>Deep Active Learning with Contrastive Learning Under Realistic Data Pool Assumptions</strong> [<a href="https://practical-dl.github.io/2023/long_paper/25/CameraReady/25.pdf" target="">Paper</a>] <br>
-      Jihyo Kim (Seoul National University of Science and Technology); Jeonghyeon Kim (Seoul National University of Science and Technology); Sangheum Hwang (Seoul National University of Science and Technology)*</li>
-
-      <li><strong>Towards Hardware-Specific Automatic Compression of Neural Networks</strong> [<a href="https://practical-dl.github.io/2023/long_paper/26/CameraReady/26.pdf" target="">Paper</a>] <br>
-      Torben Krieger (Heidelberg University); Bernhard Klein (Heidelberg University)*; Holger Froening (University of Heidelberg)</li>
-
-      <li><strong>A-ColViT : Real-time Interactive Colorization by Adaptive Vision Transformer</strong> [<a href="https://practical-dl.github.io/2023/long_paper/27/CameraReady/27.pdf" target="">Paper</a>] <br>
-      Gwanghan Lee (Sungkyunkwan University (SKKU)  )*; Saebyeol Shin (Sungkyunkwan University (SKKU)); Donggeun Ko (Sungkyunkwan University); JiYeon Jung (SK telecom); Simon S Woo (Sungkyunkwan University (SKKU))</li>
-      
-    </ul> -->
-    </div>
-    </div>
-
-
-    <div class="container">
-    <h2>Accepted Extended Abstract</h2>
-    <div class="overview">
-    <!-- <ul>
-      <li><strong>Output Sensitivity-Aware DETR Quantization</strong> [<a href="https://practical-dl.github.io/2023/extended_abstract/4/CameraReady/4.pdf" target="">Paper</a>] <br>
-      Yafeng Huang (Nanjing University); Huanrui Yang (UC Berkeley)*; Zhen Dong (UC Berkeley); Denis A Gudovskiy (Panasonic); Tomoyuki Okuno (Panasonic); Yohei Nakata (Panasonic Corporation); Yuan Du (Nanjing University); Shanghang Zhang (Peking University); Kurt Keutzer (EECS, UC Berkeley)</li>
-
-      <li><strong>Addressing distribution shift at test time in pre-trained language models</strong> [<a href="https://practical-dl.github.io/2023/extended_abstract/11/CameraReady/11.pdf" target="">Paper</a>] <br>
-      Ayush Singh (EverNorth Healthcare Services)*; John Ortega (University of Santiago de Compostela)</li>
-
-      <li><strong>QD-BEV: Quantization-aware View-guided Distillation for Multi-view 3D Object Detection</strong> [<a href="https://practical-dl.github.io/2023/extended_abstract/22/CameraReady/22.pdf" target="">Paper</a>] <br>
-      yifan zhang (Nanjing University)*; Zhen Dong (UC Berkeley); Huanrui Yang (UC Berkeley); Ming Lu (Intel Labs China); Cheng-Ching Tseng (Peking University); Yandong Guo (OPPO Research Institute); Kurt Keutzer (EECS, UC Berkeley); LI DU (Nanjing University); Shanghang Zhang (Peking University)</li>
-
-      <li><strong>Frequency Regularization for Improving Adversarial Robustness</strong> [<a href="https://practical-dl.github.io/2023/extended_abstract/24/CameraReady/24.pdf" target="">Paper</a>] <br>
-      Binxiao Huang (The University of Hong Kong)*; Chaofan Tao (The University of Hong Kong); Rui Lin (The University of Hong Kong); Ngai Wong (The University of Hong Kong)</li>
-    </ul> -->
-
-    </div>
-    </div>
-
-  </div>
-  </div>
-    </div>
-  </section>
-
-    <!--==========================================
-  =            Program Committee Section            =
-  ===========================================-->
-  
-   <section class="popular-deals section bg-gray"> 
-    <div class="container">
-      <div class="row">
-        <div class="col-12"> 
-          <div class="section-title">
-            <h2 id="committee">Organizing Committee</h2>
-          </div>
-      <!-- <div class="left">
-       <ul style="margin-left: 80px">
-          <li>Yifu Ding, Beihang University</li>
-          <li>Xiuying Wei, Beihang University</li>
-          <li>Mingyuan Zhang, Nanyang Technological University</li>
-          <li>Yiming Li, Tsinghua University</li>
-          
-        </ul>
-    </div> -->
-    <!-- <div class="right">
-      <ul style="margin-right: 0px">
-        <li>Renshuai Tao, Huawei Noah's Ark Lab</li>
-        <li>Boying Wang, Institute of Software Chinese Academy of Sciences</li>
-        <li>Yuhang Li, Yale University</li>
-        <li>Zixiang Zhao, Xi’an Jiaotong University</li>
-      </ul>
-      </div> -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="section"> 
-    <div class="container">
-      <div class="row">
-        <div class="col-12"> 
-          <div class="section-title">
-            <h2 id="committee">Technical Committee</h2>
-          </div>
-      <!-- <div class="left">
-        <ul style="margin-left: 80px">
-          <li>Linghui Zhu, Tsinghua University</li>
-          <li>Yisong Xiao, Beihang University</li>
-          <li>Yuxuan Wen, Beihang University</li>
-          <li>Hang Yu, Beihang University</li>
-          <li>Ruikui Wang, Beihang University</li>
-          <li>Zixin Yin, Beihang University</li>
-          <li>Jun Guo, Beihang University</li>
-          <li>Simin Li, Beihang University</li>
-          <li>Shunchang Liu, Beihang University</li>
-          <li>Zonglei Jing, Beihang University</li>
-          <li>Feng Zhu, University of Technology Sydney</li>
-          <li>Kui Zhang, University of Science and Technology of China</li>
-          <li>Zhipeng Wei, Fudan University</li>
-      </ul>
-    </div> -->
-
-    <!-- <div class="right">
-      <ul style="margin-right: 0px">
-        <li>Tianlin Li, Nanyang Technological University</li>
-        <li>Bangyan He, Institute of Information Engineering, Chinese Academy of Sciences</li>
-        <li>Jingzhi Li, Institute of Information Engineering, Chinese Academy of Sciences</li>
-        <li>Xiaojun Jia, Institute of Information Engineering, Chinese Academy of Sciences</li>
-        <li>Bo Liu, National Space Science Center, Chinese Academy of Sciences</li>
-        <li>Tianyuan Zhang, Beihang University</li>
-        <li>Shihao Bai, Beihang University</li>
-        <li>Xiaowei zhao, Beihang University</li>
-        <li>Huangxinxin Xu, Wuhan University</li>
-          <li>Maura Pintor, University of Cagliari</li>
-          <li>Jiachen Sun, University of Michigan</li>
-          <li>Yulong Cao, University of Michigan, Ann Arbor</li>
-          <li>YiKun Xu, Institute of Information Engineering, Chinese Academy of Sciences</li>
-          <li>Rajkumar Theagarajan, University of California, Riverside</li>
-      </ul>
-      </div> -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!--==========================================
-=            Sponsors Section            =
-===========================================-->
-
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12"> 
-          <div class="section-title">
-            <h2 id="sponsors">Sponsors</h2>
-        </div>
-      <!-- <div class="row"> 
-        <div class="section-title">
-          <div class="col-3" align="center">
-            <img src="./res/logo1.png" width="80%">
-          </div>
-          <div class="col-3" align="center">
-            <img src="./res/logo2.png" width="80%">
-          </div>
-          <div class="col-3" align="center">
-            <img src="./res/logo3.png" width="80%">
-          </div>
-          <div class="col-3" align="center">
-            <img src="./res/logo4.png" width="80%">
-          </div>
-        -->
-      </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!--==========================================
-=            Previous Workshops Section            =
-===========================================-->
-
-  <!-- <section class="popular-deals section bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-12"> 
-          <div class="section-title">
-            <h2 id="previous">Previous Workshops</h2>
-        </div>
-        <p><a href="https://practical-dl.github.io/2022/index" style="color:blue;">1st International Workshop on Practical Deep Learning in the Wild</a> @ AAAI 2022</p>
-      </div>
-    </div>
-  </section> -->
-  
   <!--============================
   =            Footer            =
   =============================-->
