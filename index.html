@@ -134,6 +134,49 @@
   =            Workshop Arrangement            =
   ============================================-->
   
+<style>
+
+.pdf-link {
+    color: blue; /* 设置链接颜色 */
+    text-decoration: none; /* 去除下划线 */
+    /* 其他样式 */
+}
+
+.schedule-table {
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the table on the page */
+    border-collapse: collapse;
+    text-align: center; /* Center text in cells */
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid black; /* Add borders to cells */
+    padding: 10px; /* Add some padding for aesthetics */
+}
+
+.schedule-table th:nth-of-type(1), .schedule-table td:nth-of-type(1) {
+  width: 18%; /* Width of the first column */
+}
+
+.schedule-table th:nth-of-type(2), .schedule-table td:nth-of-type(2) {
+  width: 57%; /* Width of the second column */
+}
+
+.schedule-table th:nth-of-type(3), .schedule-table td:nth-of-type(3) {
+  width: 25%; /* Width of the third column */
+}
+.schedule-table tr:first-child {
+  background-color: rgb(175, 173, 173); /* Set your desired shade of gray */
+}
+.gray_background {
+  background-color: rgb(235, 235, 235); /* Set your desired shade of gray */
+}
+
+
+
+
+</style>
+
   <section class="section">
     <div class="container">
       <div class="row">
@@ -141,9 +184,114 @@
           <div class="section-title">
             <h2 id="dates">Workshop Schedule</h2>
           </div>
-            <p align="center">
+            <!-- <p align="center">
                 <img src="./asset/schedule.png" width="90%">
-            </p>
+            </p> -->
+            <table class="schedule-table">
+              <tr>
+                <th>Time</th>
+                <th>Arrangement</th>
+                <th>Details</th>
+              </tr>
+              <tr>
+                <td>9:00 AM-10:00 AM</td>
+                <td><b>Keynote Speech:</b><br> Deep Albedo: Real-time biophysically-based facial map modifcations</td>
+                <td><b>Invited Speakers:</b><br> Wei Sen Loi, Joel Johnson, Huawei Technologies Canada </td>
+              </tr>
+              <tr>
+                <td>10:00 AM-10:30 AM</td>
+                <td>Annoucement of Competition Winners(or a second keynote speech, TBD)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10:30 AM-11:00 AM</td>
+                <td><b>Break</b></td>
+                <td></td>
+              </tr>
+              <tr class="gray_background">
+                <td colspan="3"><b>11:00 AM-12:30 PM——Oral Session 1</b></td>
+              </tr>
+              <tr>
+                <td>11:00 AM-11:20 AM</td>
+                <td>FuRPE: Learning Full-body Reconstruction from Part Experts <br>
+                  <b>Authors</b>: Zhaoxin Fan, Yuqing Pan, Hao Xu, Zhenbo Song Zhicheng Wang, Kejian</td>
+                <td>
+                  <a href="./asset/CameraReady/FuRPE.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                </td>
+              </tr>
+              <tr>
+                <td>11:20 AM-11:40 AM</td>
+                <td>ProbSIP: Probabilistic Modeling for Ambiguity-Reduced Sparse Inertial Poser <br>
+                <b>Authors</b>:Shanyan Guan, Yunbo Wang, Xintao Lv, Yanhao Ge, Xiaokang Yang</td>
+                <td>
+                  <a href="./asset/CameraReady/ProSIP.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                </td>
+              </tr>
+              <tr>
+                <td>11:40 AM-12:00 PM</td>
+                <td>Deep Learning based Dialogue System for Legal Consultancy in Smart Law<br>
+                <b>Authors</b>:Xukang Wang, Ying Cheng Wu, Xuhesheng Chen, Hongpeng Fu, Jiaqi Tan, Mengjie Zhou</td>
+                <td><a href="./asset/CameraReady/Deep Learning based Dialogue System for Legal.pdf" class="pdf-link" target="_blank">[PDF]</a></td>
+              </tr>
+              <tr>
+                <td>12:00 PM-12:20 PM</td>
+                <td> Block-wise LoRA: Revisiting Fine-grained LoRA for Effective Personalization and Stylization in Text-to-Image Generation<br>
+                <b>Authors</b>: Likun Li, Haoqi Zeng, Changpeng Yang, Haozhe Jia, Di Xu</td>
+                <td><a href="./asset/CameraReady/Block-wise LoRA Revisiting Fine-grained LoRA for Effective Personalization and Stylization in Text-to-Image Generation.pdf" class="pdf-link" target="_blank">[PDF]</a></td>
+              </tr>
+              <tr>
+                <td>12:20 PM-12:30 PM</td>
+                <td>Q&A</td>
+                <td></td>
+              </tr>
+              <tr class="gray_background">
+                <td colspan="3"><b>12:30 PM-2:00 PM——Lunch</b></td>
+              </tr>
+              <tr class="gray_background">
+                <td colspan="3"><b>2:00 PM-4:00 PM——Oral Session 2</b></td>
+              </tr>
+              <tr>
+                <td>2:00 PM-2:20 PM</td>
+                <td>Structural Learning in the design of Perspective-Aware AI Systems using Knowledge Graphs<br>
+                <b>Authors</b>: Marjan Alirezaie, Hossein Rahnama, Alex Pentland</td>
+                <td><a href="./asset/CameraReady/Structure Learning.pdf" class="pdf-link" target="_blank">[PDF]</a></td>
+              </tr>
+              <tr>
+                <td>2:20 PM-2:40 PM</td>
+                <td>The Role of Facial and Speech Features in Emotion Classification<br>
+                <b>Authors</b>:Loïc Houmard, Ard Kastrati, Dushan Vasilevski, Roger Wattenhofer</td>
+                <td><a href="./asset/CameraReady/The Role of.pdf" class="pdf-link" target="_blank">[PDF]</a></td>
+              </tr>
+              <tr>
+                <td>2:40 PM-3:00 PM</td>
+                <td>Understanding Consumers' Attitude Toward Digital Humans In Influencer Marketing<br>
+                <b>Authors:</b>Smitha Muthya Sudheendra, Maral Abdollahi, Jisu Huh, Jaideep Srivastava</td>
+                <td><a href="./asset/CameraReady/Understanding Consumers.pdf" class="pdf-link" target="_blank">[PDF]</a></td>
+              </tr>
+              <tr>
+                <td>3:00 PM-3:20 PM</td>
+                <td>Realistic Human Generation with Controllable Poses Using 3D Priors<br>
+                  <b>Authors</b>:Ruifeng Bai, Xiaohang Liu, Haozhe Jia, Wei Zhang, Changpeng Yang, Di Xu
+                </td>
+                <td><a href="./asset/CameraReady/Realistic Human Generation with Controllable Poses Using 3D Priors.pdf" class="pdf-link" target="_blank">[PDF]</a></td>
+              </tr>
+              <tr>
+                <td>3:20 PM-3:40 PM</td>
+                <td>Prompt-Propose-Verify: A Reliable Hand-Object-Interaction Data Generation Framework using Foundational Models<br>
+                <b>Authors</b>:Gurusha Juneja, Sukrit Kumar</td>
+                <td><a href="./asset/CameraReady/Prompt Propose.pdf" class="pdf-link" target="_blank">[PDF]</a></td>
+              </tr>
+              <tr>
+                <td>3:40 PM-4:00 PM</td>
+                <td>Latents2Semantics: Leveraging the Latent Space of Generative Models for Localized Style Manipulation of Face Images<br>
+                <b>Authors</b>:Snehal Singh Tomar, A.N. Rajagopalan</td>
+                <td><a href="./asset/CameraReady/La2Sem.pdf" class="pdf-link" target="_blank">[PDF]</a></td>
+              </tr>
+              <tr class="gray_background">
+                <td colspan="3"><b>4:00 PM-5:00 PM——Poster Session</b></td>
+              </tr>
+            </table>
+            
         </div>
       </div>
     </div>
