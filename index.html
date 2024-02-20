@@ -172,7 +172,33 @@
   background-color: rgb(235, 235, 235); /* Set your desired shade of gray */
 }
 
+.bubble {
+        position: absolute;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+    }
 
+.bubble:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #ccc transparent transparent transparent;
+    }
+
+.show {
+        display: block;
+}
+
+#toggleButton {
+        margin-top: 20px;
+}
 
 
 </style>
@@ -196,12 +222,40 @@
               </tr>
               <tr>
                 <td>9:00 AM-9:45 AM</td>
-                <td><b>Keynote Speech:</b><br> Digital Humans: Science and Simulation in the Time of AI</td>
-                <td><b>Invited Speakers:</b><br> Dinesh K. Pai, University of British Columbia </td>
+                <td><b>Keynote Speech:</b><br> Digital Humans: Science and Simulation in the Time of AI<br>
+                <button id="toggleButton">Abstract</button>
+                <div id="bubbleContent" class="bubble">My goal is to develop realistic computational models of the human body. Models that can make useful predictions of how we move and how our bodies interact with products such as clothing. Despite a long history of scientific research, current models have many surprising shortcomings.  I will first describe some fundamental problems with classical models of the complex human biomechanical system, and show how we can model it better. I will present examples of modeling human hands, eyes, muscles, and skin. I will describe breakthroughs in my lab in building personalized models of an individual's body using a complete pipeline for measurement, modeling, parameter estimation, and data-driven simulation using the finite element method. Our methods can be used to create personalized digital avatars of individuals or of a population. There are many potential applications, ranging from virtual prototyping for product design to virtual garment try-on for e-commerce. Next I will describe challenges and opportunities for machine learning in simulating the behavior of living humans. I will argue that access to high quality data remains the crucial bottleneck for these problems. How can we acquire such data, ethically and at scale?  I will also explore some fundamental technical limits to sensing and accurately predicting the actual behaviors of a real system, and not just plausible behaviors.</div>
+                <script>
+                    document.getElementById("toggleButton").addEventListener("click", function() {
+                        var bubbleContent = document.getElementById("bubbleContent");
+                        bubbleContent.classList.toggle("show");
+                    });
+                </script>
+                </td>
+                <td><b>Invited Speakers:</b><br> Dinesh K. Pai, University of British Columbia <br>
+                <button id="toggleButton2">Bio</button>
+                <div id="bubbleContent2" class="bubble">Dinesh K. Pai is a Professor of Computer Science at the University of British Columbia, and founder of Vital Mechanics Research - a startup providing high-fidelity soft avatars for apparel fit testing. His current research is focused on data-driven digital human models, frictional contact between soft objects, machine learning for design, and technology for efficient measurement of material properties. His research is multidisciplinary, spanning computer graphics, scientific computing, robotics, biomechanics, neuroscience, and artificial intelligence.
+                  He has received many prestigious recognitions, including a Tier 1 Canada Research Chair, the 2020 CHCCS Achievement Award for Computer Graphics, UBC's Killam Research Prize, three NSERC Discovery Accelerator/Supplement Awards, and an international Human Frontier Science Program grant. Dr. Pai has been a Professor at Rutgers University and has held visiting professorships at Carnegie Mellon University's Robotics Institute, New York University's Center for Neural Science, the University of Siena (Santa Chiara Chair in Cognitive Science), and the Collège de France, Paris (Professeur Invité). He received his Ph.D. from Cornell University, Ithaca, NY, and his B.Tech. degree from the Indian Institute of Technology, Madras. See <a href="//sensorimotor.cs.ubc.ca/pai/ " style="color:blue;">//sensorimotor.cs.ubc.ca/pai/ </a>for more information.</div>
+                  <script>
+                    document.getElementById("toggleButton2").addEventListener("click", function() {
+                        var bubbleContent = document.getElementById("bubbleContent2");
+                        bubbleContent.classList.toggle("show");
+                    });
+                </script>
+                </td>
               </tr>
               <tr>
                 <td>9:45 AM-10:30 AM</td>
-                <td><b>Invited Talk:</b><br> Deep Albedo: Real-time biophysically-based facial map modifcations</td>
+                <td><b>Invited Talk:</b><br> Deep Albedo: Real-time biophysically-based facial map modifcations<br>
+                <button id="toggleButton3">Abstract</button>
+                <div id="bubbleContent3" class="bubble">Altering skin parameters and colors are inherently complex and requires sophisticated physically-based models to describe. We leverage the autoencoders and simulated biophysically-based skin parameters to enable an efficient spatial-varying mapping between the biophysical parameters and their resulting skin color. The mapping enables the pixel-wise to describe age and emotion related skin color variations.</div>
+                <script>
+                  document.getElementById("toggleButton3").addEventListener("click", function() {
+                      var bubbleContent = document.getElementById("bubbleContent3");
+                      bubbleContent.classList.toggle("show");
+                  });
+              </script>  
+              </td>
                 <td><b>Invited Speakers:</b><br> Wei Sen Loi, Joel Johnson, Huawei Technologies Canada </td>
               </tr>
               <tr>
